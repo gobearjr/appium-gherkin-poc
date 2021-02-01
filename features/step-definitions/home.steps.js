@@ -1,6 +1,7 @@
 const { expect } = require('chai');
 const { Given, When, Then } = require('cucumber');
 
+
 const HomePage = require('./../pageobjects/home.page');
 
 Given(/^I am on the home page$/, () => {
@@ -9,11 +10,6 @@ Given(/^I am on the home page$/, () => {
 
 When(/^I click (.*) button$/, (menu) => {
     HomePage.click(menu);
-    // if (menu === 'App'){
-    //     HomePage.btnApp.click();
-    // } else if (menu === 'Content'){
-    //     HomePage.btnContent.click();
-    // }
 });
 
 Then(/^I should see (.*)$/,  (menu) => {

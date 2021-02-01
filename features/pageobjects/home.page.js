@@ -2,7 +2,7 @@ class HomePage {
     /**
      * define selectors using getter methods
      */
-    get btnApp() {return $('//android.widget.TextView[@content-desc="App"]')}
+    get btnApp() {return $("~App")}
     get btnContent() {return $('//android.widget.TextView[@content-desc="Content"]')}
     get btnMedia() {return $("~Media")}
     get btnAlarm() {return $('//android.widget.TextView[@content-desc="Alarm"]')}
