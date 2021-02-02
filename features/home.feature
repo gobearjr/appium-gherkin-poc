@@ -9,5 +9,5 @@ Feature: Home page function
     Examples:
       | menu    | message  |
       | App     | Alarm    |
-      # | Content | Packages |
+      | Content | Packages |
 

@@ -5,6 +5,7 @@ const { Given, When, Then } = require('cucumber');
 const HomePage = require('./../pageobjects/home.page');
 
 Given(/^I am on the home page$/, () => {
+     driver.launchApp();
     expect(HomePage.btnApp).to.exist;
 });
 

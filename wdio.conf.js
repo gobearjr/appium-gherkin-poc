@@ -55,7 +55,7 @@ exports.config = {
         maxInstances: 1,
         //
         platformName:  'Android',
-        deviceName: 'Appium',
+        deviceName: 'Pixel 3 API 29',
         fullReset: false,
         noReset: true,
         // autoGrantPermissions: true,
