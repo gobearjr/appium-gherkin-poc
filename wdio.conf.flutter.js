@@ -19,7 +19,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './features/**/*.feature'
+        './features/*.feature'
     ],
     // Patterns to exclude.
     exclude: [
@@ -53,13 +53,15 @@ exports.config = {
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
         maxInstances: 1,
-        //
-        platformName:  'Android',
-        deviceName: 'Pixel 3 API 29',
-        fullReset: false,
-        noReset: true,
-        // autoGrantPermissions: true,
-        app: join(process.cwd(), './ApiDemos-debug.apk'),
+        platformName: "Android",
+        platformVersion: "9",
+        // automationName: 'Flutter',
+        deviceName: "emulator-5554",
+        appPackage: "io.flutter.demo.gallery",
+        noReset:true,
+        fullReset:false,
+        autoGrantPermissions: true,
+        app: join(process.cwd(), './flutter_gallery_android.apk'),
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
@@ -161,7 +163,7 @@ exports.config = {
         // <boolean> fail if there are any undefined or pending steps
         strict: false,
         // <string> (expression) only execute the features or scenarios with tags matching the expression
-        tagExpression: '',
+        tagExpression: '@flutter',
         // <number> timeout for step definitions
         timeout: 60000,
         // <boolean> Enable this config to treat undefined definitions as warnings.

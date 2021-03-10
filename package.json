@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/wdio wdio.conf.js"
+    "android": "./node_modules/.bin/wdio wdio.conf.js",
+    "flutter": "./node_modules/.bin/wdio wdio.conf.flutter.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@wdio/cli": "^6.12.1",
+    "appium-flutter-driver": "0.0.28",
     "chai": "^4.2.0"
   },
   "devDependencies": {
